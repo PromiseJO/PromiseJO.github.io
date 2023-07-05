@@ -1,0 +1,171 @@
+@media all and (max-width: 992px){
+
+    body{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    /* Recherche */
+
+    .trouverhebergements h1{
+        margin-bottom: 13px;
+    }
+
+    /* Filtres */
+
+    .filtres h3{
+        margin-right: 17px;
+    }
+
+    .filtre{
+        margin-right: 20px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    .filtre-i{
+        flex-wrap: wrap;
+    }
+
+    /* Hébergements */
+
+    .Hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* hebergement populaires */
+
+    #hebergements{
+        width: 100%;
+    }
+
+    .hebergement{
+        width: 102%;
+    }
+
+    .hebergements{
+        padding-left: 15px;
+    }
+
+    /* Hebergements populaires */
+
+    .hebergements-box{
+        display: flex;
+        margin-left: 40px;
+    }
+
+    aside h2{
+        position: relative;
+        right: 20px;
+    }
+
+    aside{
+        width: 100%;
+        height: 278px;
+        margin-top: 53px;
+    
+    }
+
+    .hebergement-popu figcaption strong{
+        font-size: 16px;
+    }
+
+    .hebergement-popu figcaption strong .ligne,.ligne1{
+        display: inline;
+        
+    }
+
+    .hebergements-populaires img{
+        width: 40%;
+        height: 144px;
+        margin-right: 8px;
+    }
+
+    .hebergement-popu{
+        width: 30%;
+        height: 144px;
+        margin: 0;
+        margin-right: 20px;
+        padding:0;
+    }
+
+    .hebergement-popu .prix{
+        font-size: 13px;
+    }
+
+    .chart-line{
+        position: relative;
+        right: -93%;
+        top: -30px;
+    }
+
+    #note2{
+        margin-top: 35px;
+    }
+
+    #note3{
+        margin-top: 65px;
+    }
+
+    .lign1br2{
+        display: none;
+    }
+
+    /*Activités*/
+
+    .activites a{
+        height: 267px;
+        margin: 0px;
+        width: 21%;
+    }
+
+    .activites .activite{
+        width: 100%;
+    }
+
+    .activites{
+        justify-content: space-between;
+    }
+
+    .activite figcaption{
+        height: 56px;
+        width: 100%;
+    }
+
+    #Activites figcaption{
+        padding-top: 20px;
+    }
+
+    #Activites .fig-activ2{
+        padding-top: 10px;
+    }
+
+    #Activites img{
+        height: 211px;
+        width: 100%;
+    }
+    
+    .ndlg{
+        display: inline;
+    }
+
+    /*Footer*/
+
+    .footer{
+        padding-left: 70px;
+    }
+    
+    .bloc-footer{
+        margin-right: 85px;
+    }
+
+    .bloc-footer:last-child{
+        margin-left: 10px;
+    }
+
+    .footer:last-child{
+        margin-right: 0px;
+    }
+    
+}

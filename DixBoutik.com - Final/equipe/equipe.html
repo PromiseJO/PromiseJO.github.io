@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe DixBoutik.com</title>
+    <link rel="stylesheet" href="css/css-equipe.css">
+    <!-- <link rel="stylesheet" href="css/reset-css.css"> -->
+    <!-- <link rel="stylesheet" href="css/css-header"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>DixBoutik.com</h1>
+        <div class="burger" id="burger">
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <a href="../Magasin/index.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="../equipe/equipe.html">
+                    <li>Notre équipe</li>
+                </a>
+                <a href="../panier/panier.html">
+                    <li>Panier</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <h2> L'équipe </h2>
+        </section>
+
+        <section class="personnel">
+
+            <div class="container">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-leia1"> Leïa Organa </h2>
+                        <h3 id="poste-leia1"> Gérante de DixBoutik </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/leia-organa.jpeg" alt="Leïa Organa">
+                    </div>
+                    <div class="container-texte">
+                        <p id="texte-leia1"> Après avoir mené la Rebellion à la victoire face à l'Empire, elle décide de mener une vie simple et de lancer son e-commerce de vêtements de sports. </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire1()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formLeia">
+                            <label for="nom1">Nom</label><br>
+                            <textarea type="text" id="nom1" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste1" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description1" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire1();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-luke2"> Luke Skywalker </h2>
+                        <h3 id="poste-luke2"> Responsable RH </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/luke-skywalker.jpg" alt="Luke Skywalker">
+                    </div>
+
+                    <div class="container-texte">
+                        <p id="texte-luke2"> Grand héros de la galaxie, un peu naïf sur les bords, il est prêt à recruter n'importe qui car "there is still good in him". </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire2()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formLuke">
+                            <label for="nom2">Nom</label><br>
+                            <textarea type="text" id="nom2" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste2" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description2" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire2();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-han3"> Han Solo </h2>
+                        <h3 id="poste-han3"> Comptable </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/han-solo.jpg" alt="Han Solo">
+                    </div>
+
+                    <div class="container-texte">
+                        <p id="texte-han3"> Fort de son expérience avec Jabba le Hutt, nous obtenons grâce à lui des délais fournisseurs de plusieurs années. Heureusement, la congélation carbonique n'existe pas sur cette planète. </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire3()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formHan">
+                            <label for="nom3">Nom</label><br>
+                            <textarea type="text" id="nom3" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste3" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description3" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire3();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-chewbacca4"> Chewbacca </h2>
+                        <h3 id="poste-chewbacca4"> Mannequin </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/chewbacca.jpg" alt="Chewbacca">
+                    </div>
+
+                    <div class="container-texte">
+                        <p id="texte-chewbacca4"> WHRRRAAARGH WRAHGH HRARH WRHARAAR HGRAAAAAAAAAW </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire4()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formChewbacca">
+                            <label for="nom4">Nom</label><br>
+                            <textarea type="text" id="nom4" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste4" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description4" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire4();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="container-ben">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-ben5"> Ben Kenobi </h2>
+                        <h3 id="poste-ben5"> Livreur </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/ben-kenobi.jpg" alt="Ben Kenobi">
+                    </div>
+
+                    <div class="container-texte">
+                        <p id="texte-ben5"> Jadis général de guerre, il fut tué par le père de Luke. Son statut de fantôme lui permet de livrer les marchandises quasi instantanément. Un vrai atout pour l'entreprise. </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire5()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formBen">
+                            <label for="nom5">Nom</label><br>
+                            <textarea type="text" id="nom5" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste5" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description5" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire5();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sous-container">
+                    <div class="container-titre">
+                        <h2 id="nom-z6po6"> Z6-PO </h2>
+                        <h3 id="poste-z6po6"> Gestionnaire SAV </h3>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/z6po.jpg" alt="z6-po">
+                    </div>
+                    <div class="container-texte">
+                        <p id="texte-z6po6"> Ce droïde protocolaire ayant appartenu à quasiment toute la galaxie se retrouve aujourd'hui entre nos mains. Il peut communiquer dans plus de 6 millions de langues. Très pratique pour le business à l'international. </p>
+                        <!-- Formulaire de modification des textes-->
+                        <button onclick="afficherFormulaire6()">modifier</button>
+                        <div class="styleForm">
+                        <form id="formZ6PO">
+                            <label for="nom6">Nom</label><br>
+                            <textarea type="text" id="nom6" name="nom"></textarea><br>
+                            <label>Poste :</label><br>
+                            <textarea type="text" id="poste6" name="poste"></textarea><br>
+                            <label>Description :</label><br>
+                            <textarea type="text" id="description6" name="description"></textarea><br>
+                            <input type="submit" value="Soumettre" onclick="cacherFormulaire6();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>- Designed by Us -</footer>
+</body>
+
+</html>

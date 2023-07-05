@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/tablette.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <!--Barre de navigation-->
+
+    <header>
+        <h1>DixBoutik.com</h1>
+        <div class="burger" id="burger">
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <a href="../Magasin/index.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="../equipe/equipe.html">
+                    <li>Notre équipe</li>
+                </a>
+                <a href="../panier/panier.html">
+                    <li>Panier</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Panier-->
+
+    <main>
+        <div class="panier-et-recap">
+            <section class="section-panier">
+                <h2 id="total-quantite-dans-le-panier"></h2>  
+                <div class="articles-panier">
+                    <p id="aucun-article"></p>
+                    <figure class="article-panier" id="article-panier1">
+                        <img src="images/chaussettes-de-sport.png" alt="image de l'article">
+                        <figcaption>
+                            <span class="nom-et-prix">
+                                <strong>Chausettes de sport </strong><span>3€</span>
+                            </span>    
+                            <span class="boutons-de-quantite">
+                                <button onclick="Ajouter('Chaussettes');">+</button>
+                                <span id="quantiteproduit1"></span>
+                                <button onclick="Supprimer('Chaussettes'); supressionDuPanier('Chaussettes');">-</button>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <figure class="article-panier" id="article-panier2">
+                        <img src="images/montre-chronometre.png" alt="image de l'article">
+                        <figcaption>
+                            <span class="nom-et-prix">
+                                <strong>Montre chronomètre </strong><span>10€</span>
+                            </span>
+                            <span class="boutons-de-quantite">
+                                <button onclick="Ajouter('Montre');">+</button>
+                                <span id="quantiteproduit2"></span>
+                                <button onclick="Supprimer('Montre'); supressionDuPanier('Montre');">-</button>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <figure class="article-panier" id="article-panier3">
+                        <img src="images/sac-a-dos.png" alt="image de l'article">
+                        <figcaption>
+                            <span class="nom-et-prix">
+                                <strong>Sac à dos </strong><span>10€</span>
+                            </span>
+                            <span class="boutons-de-quantite">
+                                <button onclick="Ajouter('Sac');">+</button>
+                                <span id="quantiteproduit3"></span>
+                                <button onclick="Supprimer('Sac'); supressionDuPanier('Sac');" >-</button>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <figure class="article-panier" id="article-panier4">
+                        <img src="images/t-shirt.png" alt="image de l'article">
+                        <figcaption>
+                            <span class="nom-et-prix">
+                                <strong>T-shirt </strong><span>10€</span>
+                            </span>
+                            <span class="boutons-de-quantite">
+                                <button onclick="Ajouter('Tshirt');">+</button>
+                                <span id="quantiteproduit4"></span>
+                                <button onclick="Supprimer('Tshirt'); supressionDuPanier('Tshirt');">-</button>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+            <button id="tout-effacer" class="tout-effacer" onclick="ToutEffacer();">Vider le panier</button>
+        </section>
+
+        <!--Total-->
+
+        <section class="section-total">
+            
+            <div class="articles-reca">
+                <div id="article-reca1" class="article-reca">
+                    <strong>Chausette de sport x <span class="quantite-dans-panier" id="quantite-dans-panier1"></span></strong>
+                    <p><span id="prix-total-du-produit1"></span>€</p>
+                </div>
+                    <div id="article-reca2" class="article-reca">
+                        <strong>Montre chronomètre x <span class="quantite-dans-panier" id="quantite-dans-panier2"></span></strong>
+                        
+                        <p><span id="prix-total-du-produit2"></span>€</p>
+                    </div>
+                    <div id="article-reca3" class="article-reca">
+                        <strong>Sac à dos x <span class="quantite-dans-panier" id="quantite-dans-panier3"></span></strong>
+                        
+                        <p><span id="prix-total-du-produit3"></span>€</p>
+                    </div>
+                    <div id="article-reca4" class="article-reca">
+                        <strong>T-shirt x <span class="quantite-dans-panier" id="quantite-dans-panier4"></span></strong>
+                        
+                        <p><span id="prix-total-du-produit4"></span>€</p>
+                    </div>
+                    
+            </div>
+            
+            <span class="total-recap">
+                <p >Total:</p>
+                <p id="euro"><span id="Total"></span>€</p>
+            </span>
+            <button id="caisse" class="achat">Passer a la caisse</button>
+        </section></div>
+    </main>
+    <!--Footer-->
+    <footer>- Designed by Us -</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

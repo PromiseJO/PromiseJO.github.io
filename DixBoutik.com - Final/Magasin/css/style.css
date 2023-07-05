@@ -1,0 +1,287 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+span::after {
+  content: none;
+}
+
+header {
+  font-weight: 600;
+  padding: 2em;
+  background-color: #ffc63c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+header ul {
+  display: flex;
+  gap: 2em;
+  font-size: 1.5em;
+}
+header ul a {
+  text-decoration: none;
+  color: black;
+}
+header ul a:hover {
+  text-decoration: underline;
+}
+main {
+  background: rgb(255, 246, 223);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 246, 223, 1) 0%,
+    rgba(255, 198, 60, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+main h2 {
+  padding: 1em 0;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+main section .product {
+  margin: 2em 5em;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #e1e1e1;
+}
+
+main section .product h3 {
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 0.6em;
+  background-color: #ffc63c;
+  border-radius: 13px 13px 0 0;
+}
+main section .product .delete-add {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0%;
+  right: 0%;
+}
+main section .product .delete-add #boutons {
+  display: flex;
+}
+main section .product .delete-add #prix {
+  margin-left: 1em;
+  font-size: 1.7em;
+  font-weight: bold;
+  display: flex;
+}
+
+main section .product .delete-add button {
+  margin: 0 0.5em;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffc63c;
+  border-radius: 25px;
+  background-color: transparent;
+}
+main section .product .delete-add button:hover {
+  background-color: #fae0a3;
+}
+main section .product .delete-add input {
+  width: 4em;
+  height: 2.5em;
+  border: transparent;
+  border-radius: 25px;
+  padding: 0 1em;
+  text-align: center;
+}
+
+main section .product p {
+  font-size: 1.1em;
+  padding: 0.5em;
+  text-align: center;
+}
+main .container-total {
+  font-size: 2em;
+  height: 3em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+main .calcul-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  border: 1px solid #000;
+  background-color: #e0a417;
+  border-radius: 10px;
+  padding: 0.2em;
+  cursor: pointer;
+}
+main .calcul-button:hover {
+  background-color: #ffb300;
+}
+footer {
+  background-color: black;
+  color: #ffc63c;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: 100%;
+  height: 2em;
+  font-size: 1.2em;
+}
+
+/********* MEDIA QUERIES *********/
+@media screen and (max-width: 745px) {
+  header {
+    padding: 5px 0;
+  }
+  header h1 {
+    z-index: 99;
+  }
+  header nav {
+    background-color: #ffc63c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+  header ul {
+    gap: 1em;
+  }
+  header nav ul {
+    font-size: 1em;
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%);
+  }
+  header nav ul li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  header nav ul a {
+    padding: 2px 10px;
+    text-decoration: none;
+  }
+
+  .open {
+    width: 100%;
+    height: 200px;
+  }
+  header .burger {
+    display: none;
+  }
+
+  header .burger {
+    display: block;
+    padding: 1em;
+    z-index: 99;
+    position: absolute;
+    right: 0.5em;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  header .burger span {
+    width: 75%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease-in-out;
+  }
+  header .burger span::before,
+  span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+  }
+  header .burger span::before {
+    height: 2px;
+    border-radius: 15px;
+    transform: translateY(-8px);
+  }
+  header .burger span::after {
+    height: 2px;
+    border-radius: 15px;
+    transform: translateY(8px);
+  }
+
+  header .burger.active {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .burger.active span {
+    background-color: transparent;
+  }
+  .burger.active span::before {
+    transform: rotateZ(45deg);
+  }
+  .burger.active span::after {
+    transform: rotateZ(-45deg);
+  }
+  #prix::after,
+  #Total::after,
+  #total-cost::after,
+  .delete-add::after,
+  #boutons::after {
+    content: none;
+  }
+  main section .product span #prix {
+    font-weight: bold;
+  }
+  main section .product .delete-add {
+    width: 100%;
+    zoom: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+  }
+}
+
+@media screen and (min-width: 745px) {
+  main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+  main section .product {
+    width: 40%;
+    margin: 1em 2em;
+  }
+}

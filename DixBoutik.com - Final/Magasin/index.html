@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/785dd546fc.js" crossorigin="anonymous" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>DixBoutik</title>
+</head>
+
+<body>
+    <header>
+        <h1>DixBoutik.com</h1>
+        <div class="burger" id="burger">
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <a href="../Magasin/index.html">
+                    <li>Boutique</li>
+                </a>
+                <a href="../equipe/equipe.html">
+                    <li>Notre équipe</li>
+                </a>
+                <a href="../panier/panier.html">
+                    <li>Panier</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Nos produits disponible</h2>
+        <section>
+            <div class="product">
+                <h3>Chaussures</h3>
+                <img src="./img/chaussures-marche.png" alt="chaussures de marche">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(1)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur1" value="0">
+                        <button class="remove-button" onclick="retirerArticle(1)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(1)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Montre</h3>
+                <img src="./img/montre-chronometre.png" alt="montre">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(2)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur2" value="0">
+                        <button class="remove-button" onclick="retirerArticle(2)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(2)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Sac a dos</h3>
+                <img src="./img/sac-a-dos.png" alt="sac a dos">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(3)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur3" value="0">
+                        <button class="remove-button" onclick="retirerArticle(3)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(3)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Short</h3>
+                <img src="./img/short.png" alt="short">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(4)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur4" value="0">
+                        <button class="remove-button" onclick="retirerArticle(4)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(4)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>T-shirt</h3>
+                <img src="./img/t-shirt.png" alt="t-shirt">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(5)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur5" value="0">
+                        <button class="remove-button" onclick="retirerArticle(5)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(5)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Training</h3>
+                <img src="./img/trainings-puma.png" alt="training">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(6)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur6" value="0">
+                        <button class="remove-button" onclick="retirerArticle(6)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(6)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Veste légère imperméable</h3>
+                <img src="./img/veste-legere-impermeable.png" alt="veste lÃ©gÃ¨re">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(7)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur7" value="0">
+                        <button class="remove-button" onclick="retirerArticle(7)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(7)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Bonnet bleu</h3>
+                <img src="./img/bonnet-bleu.png" alt="bonnet">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(8)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur8" value="0">
+                        <button class="remove-button" onclick="retirerArticle(8)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(8)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Chaussettes de sport</h3>
+                <img src="./img/chaussettes-de-sport.png" alt="chaussette de sport">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(9)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur9" value="0">
+                        <button class="remove-button" onclick="retirerArticle(9)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(9)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Chaussure Femme</h3>
+                <img src="./img/chaussure-running-femme.png" alt="chaussure femme">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(10)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur10" value="0">
+                        <button class="remove-button" onclick="retirerArticle(10)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(10)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Legging Femme</h3>
+                <img src="./img/legging-femme.png" alt="legging femme">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(11)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur11" value="0">
+                        <button class="remove-button" onclick="retirerArticle(11)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(11)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+            <div class="product">
+                <h3>Imperméable Femme</h3>
+                <img src="./img/veste-impermeable-femme.png" alt="veste impermÃ©able femme">
+                <div class="delete-add">
+                    <span id="boutons">
+                        <button class="delete-button" onclick="supprimerArticles(12)"><img src="./img/icon-poubelle.png"
+                                alt="icone poubelle"></button>
+                        <input type="text" id="valeur12" value="0">
+                        <button class="remove-button" onclick="retirerArticle(12)"><img src="./img/remove.png"
+                                alt="icone suppression"></button>
+                        <button class="add-button" onclick="ajouterArticle(12)"><img src="./img/add.png"
+                                alt="icone ajout"></button>
+                    </span>
+                    <span class="prix" id="prix">10 €</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus inventore doloribus nisi,
+                    rem quos!</p>
+            </div>
+        </section><br>
+        <div class="container-total"> <span id="Total">Prix Total: 0€</span> </div>
+        <a href="#Total"> <button class="calcul-button" onclick="">Voir Total</button> </a>
+    </main>
+    <footer>- Designed by Us -</footer>
+</body>
+
+</html>

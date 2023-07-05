@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="images/IMAG0313_1.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Promise John</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Accueil </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">A propos de moi </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Mes Projets
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Mes projets </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Bonjour, Je m'appelle Promise John</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            En tant qu'autodidacte passionnée par le développement web, je cherche activement une entreprise pour une alternance. Cette expérience me permettrait de débuter mes études formelles dans ce domaine, tout en apportant mon enthousiasme et mes compétences préalablement acquises à l'équipe.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="images/CV_2023-06-22_Promise_JOHN.pdf" download="CV_Promise_JOHN" class="btn btn--bg">Télecharger mon CV</a>
+        </div>
+      </div>
+    
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">A propos de moi</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Un peu plus sur moi!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Ma curiosité insatiable m'a guidée vers le développement web et mobile, des domaines qui suscitent mon enthousiasme et nourrissent ma passion. C'est cette curiosité inépuisable qui a également inspiré mon parcours en tant qu'autodidacte. Impatiente de transformer cette passion et cette curiosité en compétences professionnelles, je suis à la recherche d'une alternance.
+              </p>
+              <p class="about__content-details-para">
+                Âgée de 20 ans et résidant actuellement à Tours, je suis totalement mobile et prête à me déplacer pour saisir la bonne opportunité.
+                
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contactez moi</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Mes Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Python</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Mes Projets</span>
+          <span class="heading-sec__sub">
+            
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://julien-thibault.fr/images/portfolio/booki.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Booki</h3>
+              <p class="projects__row-content-desc">
+                L'objectif était d'intégrer la maquette d'un site de planification de vacances nommé "Booki". <br>J'ai utilisé les languagues : HTML et CSS
+              </p>
+              <a
+                href="P2_john_code/index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/Screenshot 2023-07-05 05.11.53.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SuperApp</h3>
+              <p class="projects__row-content-desc">
+                L'objectif était d'intégrer la maquette d'une application trop super. <br>J'ai utilisé les languagues : HTML, CSS et Javascript
+              </p>
+              <a
+                href="SuperApp/index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/Screenshot 2023-07-05 05.13.18.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SuperBank</h3>
+              <p class="projects__row-content-desc">
+                Mon objectif était d'integrer la maquette de la page d'accueil d'un site que j'ai appelé Easybank Easybank. <br>J'ai utilisé les languagues : HTML et CSS
+              </p>
+              <a
+                href="easybank-landing-page-master/index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/Screenshot 2023-07-05 05.22.53.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">DixBoutik.com</h3>
+              <p class="projects__row-content-desc">
+                Pendant la semaine de tests du Cefim, nous avons réalisé un travail de groupe. Dans ce cadre, j'ai été chargé de m'occuper du développement du panier. Nous avions 2 jours pour tout rendre. <br>J'ai utilisé les languagues : HTML, CSS et Javascript
+              </p>
+              <a
+                href="DixBoutik.com - Final/panier/panier.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/Screenshot 2023-07-05 06.35.29.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Mon Portofolio</h3>
+              <p class="projects__row-content-desc">
+                Voici mon portfolio, celui dans lequel vous naviguez actuellement.<br>J'ai utilisé les languagues : HTML, CSS, Javascript et PHP 
+              </p>
+              <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Promise John</h4> 
+          </div>
+        </div>
+
+        
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
